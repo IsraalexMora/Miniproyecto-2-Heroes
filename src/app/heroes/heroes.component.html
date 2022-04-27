@@ -1,22 +1,24 @@
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center">Heroes <small>Marvel y DC</small></h1>
-        </div>
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center">Heroes <small>Marvel y DC</small></h1>
     </div>
-    <div class="row">
-        <div class="col">
-            <div class="card-columns">
-               <div class="card" *ngFor="let heroe of misHeroes, let i=index">
-                   <img src={{heroe.img}} class="card-img-top" alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">{{heroe.nombre}}</h5>
-                       <p class="card-text">{{heroe.bio}}</p>
-                       <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
-                   </div>
-                   <a [routerLink]="['/heroe', i]" class="mb-3 btn btn-outline-primary btn-block">VerMas</a>
-               </div>
-            </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card-columns">
+        <div class="card" *ngFor="let heroe of misHeroes; let i = index">
+          <img src="{{ heroe.img }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ heroe.nombre }}</h5>
+            <p class="card-text">{{ heroe.bio }}</p>
+            <p class="card-text">
+              <small class="text-muted">{{ heroe.aparicion }}</small>
+            </p>
+          </div>
+          <a [routerLink]="['/heroe', i]" class="mb-3 btn btn-outline-primary btn-block" >Ver Más</a>
         </div>
+      </div>
     </div>
+  </div>
 </div>

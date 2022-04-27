@@ -11,8 +11,8 @@ import { HeroeService } from '../shared/heroe.service';
 export class UnheroeComponent implements OnInit {
 
   @Input() heroe!: Heroe;
-  constructor( public heroeService : HeroeService, public activatedRoute: ActivatedRoute) {
-    this.activatedRoute.params.subscribe( params => {
+  constructor(public heroeService: HeroeService, public activatedRoute: ActivatedRoute) {
+    this.activatedRoute.params.subscribe(params => {
       this.heroe = heroeService.getHeroe(params['id']);
     })
   }

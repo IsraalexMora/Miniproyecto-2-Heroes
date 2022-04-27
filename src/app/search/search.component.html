@@ -1,14 +1,14 @@
 <div class="container">
-    <div class="row animated fadeIn fast" *ngIf = "indice == -1">
-        <div class="col col-md-12">
-            <div class="alert alert-info" role="alert">
-                No existen resultados de {{nombreh}}
-            </div>
-        </div>
+  <div class="row animated fadeIn fast" *ngIf="indice == -1">
+    <div class="col col-md-12">
+      <div class="alert alert-info" role="alert">
+        No existen resultados de {{ nombreh }}
+      </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <app-unheroe *ngIf = "indice != -1" [heroe] = "miheroe"></app-unheroe>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-unheroe *ngIf="indice != -1" [heroe]="miheroe"></app-unheroe>
     </div>
+  </div>
 </div>

@@ -11,15 +11,15 @@ export class HeroeService {
 
   constructor() { }
 
-  getHeroes(): Heroe[]{
+  getHeroes(): Heroe[] {
     return this.heroes;
   }
 
-  getHeroe(index: number): Heroe{
+  getHeroe(index: number): Heroe {
     return this.heroes[index];
   }
 
-  searchHeroe(nomheroe: string): number{
+  searchHeroe(nomheroe: string): number {
     let index = this.heroes.findIndex(p => p.nombre === nomheroe);
     return index;
   }

@@ -10,27 +10,27 @@ import { HeroeService } from '../shared/heroe.service';
 })
 export class SearchComponent implements OnInit {
 
-  nombreh : string = "";
-  indice : number = 0;
+  nombreh: string = "";
+  indice: number = 0;
   miheroe: Heroe = {
     nombre: "",
     bio: "",
     img: "",
     aparicion: "",
-    casa : ""
+    casa: ""
   }
-  constructor( private heroeService: HeroeService, private activatedRoute: ActivatedRoute) {
-    this.activatedRoute.params.subscribe (params => {
+  constructor(private heroeService: HeroeService, private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.params.subscribe(params => {
       this.nombreh = params['nombreh'];
       this.indice = this.heroeService.searchHeroe(this.nombreh);
       console.log(this.indice);
 
-      if(this.indice != -1){
+      if (this.indice != -1) {
         this.miheroe = this.heroeService.getHeroe(this.indice);
       }
 
     });
-   }
+  }
 
   ngOnInit(): void {
   }

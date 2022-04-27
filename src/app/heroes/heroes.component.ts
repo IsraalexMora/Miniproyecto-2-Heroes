@@ -11,7 +11,7 @@ export class HeroesComponent implements OnInit {
 
   misHeroes: Heroe[] = [];
 
-  constructor(public miservicio: HeroeService) { 
+  constructor(public miservicio: HeroeService) {
     console.log("Constructor de Heroes");
   }
 
