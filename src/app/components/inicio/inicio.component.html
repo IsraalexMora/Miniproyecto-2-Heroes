@@ -29,49 +29,7 @@
 <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div>
-          <div class="mb-3">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Usuario" [(ngModel)]="usuario.nombre">
-          </div>
-          <div class="mb-3">
-            <label>Sexo</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sexo" id="mujer" value="Mujer" checked [(ngModel)]="usuario.sexo">
-              <label class="form-check-label" for="mujer">
-                Mujer
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sexo" id="hombre" value="Hombre" [(ngModel)]="usuario.sexo">
-              <label class="form-check-label" for="hombre">
-                Hombre
-              </label>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="email">Correo:</label>
-            <input type="email" class="form-control" id="email" placeholder="usuario@correo.com" [(ngModel)]="usuario.correo">
-          </div>
-          <div class="mb-3">
-            <label for="fecha">Fecha de nacimiento:</label>
-            <input type="date" class="form-control" id="fecha" [(ngModel)]="usuario.fecha">
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Quizá más tarde
-        </button>
-        <button type="button" class="btn btn-success text-right" (click)="this.nuevoUsuario()">Registrarse</button>
-      </div>
+      <app-registro></app-registro>
     </div>
   </div>
 </div>

@@ -10,6 +10,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { AcercaComponent } from './components/acerca/acerca.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
+import { UsuariosModule } from './modules/usuarios/usuarios.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BuscarComponent } from './components/buscar/buscar.component';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    FormsModule
+    FormsModule,
+    UsuariosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

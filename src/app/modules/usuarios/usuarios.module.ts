@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { UsuariosService } from './usuarios.service';
+import { UsuariosService } from './services/usuarios.service';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 @NgModule({
@@ -11,6 +12,12 @@ import { UsuariosService } from './usuarios.service';
   ],
   providers: [
     UsuariosService
+  ],
+  declarations: [
+    RegistroComponent
+  ],
+  exports: [
+    RegistroComponent
   ]
 })
 export class UsuariosModule { }
