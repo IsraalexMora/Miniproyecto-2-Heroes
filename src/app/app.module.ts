@@ -13,6 +13,7 @@ import { BuscarComponent } from './components/buscar/buscar.component';
 import { UsuariosModule } from './modules/usuarios/usuarios.module';
 import { HistoriaComponent } from './components/historia/historia.component';
 import { ValidarVideoPipe } from './components/historia/validar-video.pipe';
+import { ColeccionablesComponent } from './components/coleccionables/coleccionables.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ValidarVideoPipe } from './components/historia/validar-video.pipe';
     HeroeComponent,
     BuscarComponent,
     HistoriaComponent,
-    ValidarVideoPipe
+    ValidarVideoPipe,
+    ColeccionablesComponent
   ],
   imports: [
     BrowserModule,

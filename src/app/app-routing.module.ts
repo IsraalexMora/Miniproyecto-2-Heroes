@@ -7,6 +7,7 @@ import { BuscarComponent } from './components/buscar/buscar.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { TablaUsuariosComponent } from './modules/usuarios/components/tabla-usuarios/tabla-usuarios.component';
 import { HistoriaComponent } from './components/historia/historia.component';
+import { ColeccionablesComponent } from './components/coleccionables/coleccionables.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'buscar/:nombreh', component: BuscarComponent },
   { path: 'usuarios', component: TablaUsuariosComponent },
   { path: 'historia', component: HistoriaComponent },
+  { path: 'coleccionables', component: ColeccionablesComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
