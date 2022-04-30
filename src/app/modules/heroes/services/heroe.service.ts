@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Heroe } from './heroe';
-import heroes from '../../assets/json/heroes.json'
+import heroes from '../../../../assets/json/heroes.json'
 
 @Injectable({
   providedIn: 'root'

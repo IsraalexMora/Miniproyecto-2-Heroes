@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { UsuariosService } from './services/usuarios.service';
-import { RegistroComponent } from './components/registro/registro.component';
+import { RegistroUsuariosComponent } from './components/registro-usuarios/registro-usuarios.component';
 import { TablaUsuariosComponent } from './components/tabla-usuarios/tabla-usuarios.component';
 
 
@@ -15,11 +15,11 @@ import { TablaUsuariosComponent } from './components/tabla-usuarios/tabla-usuari
     UsuariosService
   ],
   declarations: [
-    RegistroComponent,
+    RegistroUsuariosComponent,
     TablaUsuariosComponent
   ],
   exports: [
-    RegistroComponent
+    RegistroUsuariosComponent
   ]
 })
 export class UsuariosModule { }

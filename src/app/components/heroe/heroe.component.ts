@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Heroe } from 'src/app/services/heroe';
-import { HeroeService } from 'src/app/services/heroe.service';
+import { Heroe } from 'src/app/modules/heroes/services/heroe';
+import { HeroeService } from 'src/app/modules/heroes/services/heroe.service';
 
 @Component({
   selector: 'app-heroe',

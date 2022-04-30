@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../services/usuarios.model';
 import { UsuariosService } from '../../services/usuarios.service';
+
 @Component({
-  selector: 'app-registro',
-  templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
+  selector: 'app-registro-usuarios',
+  templateUrl: './registro-usuarios.component.html',
+  styleUrls: ['./registro-usuarios.component.css']
 })
-export class RegistroComponent implements OnInit {
-  usuario: Usuario = {
+export class RegistroUsuariosComponent implements OnInit {
+  public usuario: Usuario = {
     nombre: "",
     sexo: "",
     correo: "",
