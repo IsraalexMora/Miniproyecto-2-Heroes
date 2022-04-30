@@ -4,6 +4,7 @@
       <h1 class="text-danger text-center" *ngIf="!usuarios.length">
         No existen usuarios registrados
       </h1>
+      <h1 class="text-center text-success font-weight-bold" *ngIf="usuarios.length">Usuarios</h1>
       <table class="table table-hover table-dark" *ngIf="usuarios.length">
         <thead>
           <tr>

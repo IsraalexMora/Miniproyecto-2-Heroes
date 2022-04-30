@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+        <h1 class="modal-title text-success" id="exampleModalLabel">Registro</h1>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -10,11 +10,11 @@
       <div class="modal-body">
         <div>
           <div class="mb-3">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre" class="font-weight-bold">Nombre:</label>
             <input type="text" class="form-control" id="nombre" placeholder="Usuario" [(ngModel)]="usuario.nombre">
           </div>
           <div class="mb-3">
-            <label>Sexo</label>
+            <label class="font-weight-bold">Sexo</label>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="sexo" id="mujer" value="Mujer" checked [(ngModel)]="usuario.sexo">
               <label class="form-check-label" for="mujer">
@@ -29,11 +29,11 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="email">Correo:</label>
+            <label for="email" class="font-weight-bold">Correo:</label>
             <input type="email" class="form-control" id="email" placeholder="usuario@correo.com" [(ngModel)]="usuario.correo">
           </div>
           <div class="mb-3">
-            <label for="fecha">Fecha de nacimiento:</label>
+            <label for="fecha" class="font-weight-bold">Fecha de nacimiento:</label>
             <input type="date" class="form-control" id="fecha" [(ngModel)]="usuario.fecha">
           </div>
         </div>
