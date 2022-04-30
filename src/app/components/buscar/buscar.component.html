@@ -1,8 +1,16 @@
 <div class="container">
   <div class="row animated fadeIn fast" *ngIf="indice == -1">
     <div class="col col-md-12">
-      <div class="alert alert-info" role="alert">
-        No existen resultados de {{ nombreh }}
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">
+            <img src="../../../assets/img/heroe-no-disponible.png" alt="heroe-no-disponible" class="img-fluid">
+          </div>
+          <div class="col">
+            <h1 class="text-danger font-weight-bold">Valla, parece que no hemos encontrado resultados de {{ nombreh }}</h1>
+            <p class="text-danger">Esta página te redireccionará automaticamente</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

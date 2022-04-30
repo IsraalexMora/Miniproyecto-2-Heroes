@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { UsuariosService } from './services/usuarios.service';
 import { RegistroComponent } from './components/registro/registro.component';
+import { TablaUsuariosComponent } from './components/tabla-usuarios/tabla-usuarios.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     UsuariosService
   ],
   declarations: [
-    RegistroComponent
+    RegistroComponent,
+    TablaUsuariosComponent
   ],
   exports: [
     RegistroComponent

@@ -11,6 +11,8 @@ import { AcercaComponent } from './components/acerca/acerca.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { UsuariosModule } from './modules/usuarios/usuarios.module';
+import { HistoriaComponent } from './components/historia/historia.component';
+import { ValidarVideoPipe } from './components/historia/validar-video.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { UsuariosModule } from './modules/usuarios/usuarios.module';
     HeroesComponent,
     AcercaComponent,
     HeroeComponent,
-    BuscarComponent
+    BuscarComponent,
+    HistoriaComponent,
+    ValidarVideoPipe
   ],
   imports: [
     BrowserModule,
