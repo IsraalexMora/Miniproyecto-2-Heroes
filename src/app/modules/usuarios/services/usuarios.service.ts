@@ -26,7 +26,7 @@ export class UsuariosService {
       nombre: '',
       sexo: '',
       correo: '',
-      fecha: new Date()
+      fecha: undefined
     };
   }
 }

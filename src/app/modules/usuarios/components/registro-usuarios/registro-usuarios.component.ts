@@ -12,7 +12,7 @@ export class RegistroUsuariosComponent implements OnInit {
     nombre: "",
     sexo: "",
     correo: "",
-    fecha: new Date()
+    fecha: undefined
   }
 
   constructor(private servicioUsuarios: UsuariosService) { }
