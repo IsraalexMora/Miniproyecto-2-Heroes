@@ -9,7 +9,7 @@ export class UsuariosService {
   private usuarios: Usuario[] = [];
 
   constructor() {
-    this.usuarios = JSON.parse(localStorage.getItem("usuarios") || '[]');;
+    this.usuarios = JSON.parse(localStorage.getItem("usuarios") || '[]');
   }
 
   getUsuarios(): Usuario[] {
